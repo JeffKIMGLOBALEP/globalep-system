@@ -1,0 +1,51 @@
+{
+  "name": "globalep",
+  "version": "2.0.0",
+  "description": "GLOBALEP - Global E-Commerce Integrated Management System",
+  "main": "main.js",
+  "author": "GLOBALEP",
+  "license": "UNLICENSED",
+  "scripts": {
+    "start": "electron .",
+    "build:win": "electron-builder --win portable",
+    "build:win:installer": "electron-builder --win nsis",
+    "build:mac": "electron-builder --mac",
+    "build:linux": "electron-builder --linux"
+  },
+  "build": {
+    "appId": "com.globalep.manager",
+    "productName": "GLOBALEP",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "../index.html",
+      "../manifest.json",
+      "../service-worker.js"
+    ],
+    "win": {
+      "target": ["portable", "nsis"],
+      "icon": "../icon.png"
+    },
+    "mac": {
+      "target": ["dmg"],
+      "icon": "../icon.png"
+    },
+    "linux": {
+      "target": ["AppImage"],
+      "icon": "../icon.png"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerLanguages": ["en_US", "zh_CN"],
+      "shortcutName": "GLOBALEP"
+    }
+  },
+  "devDependencies": {
+    "electron": "^33.0.0",
+    "electron-builder": "^25.0.0"
+  }
+}

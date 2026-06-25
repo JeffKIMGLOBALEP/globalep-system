@@ -1,0 +1,40 @@
+{
+  "name": "GLOBALEP - Global E-Commerce Management",
+  "short_name": "GLOBALEP",
+  "description": "Global E-Commerce Integrated Management System",
+  "start_url": "/",
+  "display": "standalone",
+  "display_override": ["window-controls-overlay"],
+  "background_color": "#0a0e17",
+  "theme_color": "#3b82f6",
+  "orientation": "landscape-primary",
+  "categories": ["business", "productivity"],
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><rect width='512' height='512' rx='100' fill='%230a0e17'/><text x='256' y='340' font-size='360' font-weight='bold' fill='%233b82f6' text-anchor='middle' font-family='sans-serif'>G</text></svg>",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='38' fill='%230a0e17'/><text x='96' y='130' font-size='140' font-weight='bold' fill='%233b82f6' text-anchor='middle' font-family='sans-serif'>G</text></svg>",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Dashboard",
+      "short_name": "Dashboard",
+      "description": "Open data dashboard",
+      "url": "/?page=dashboard"
+    },
+    {
+      "name": "Projects",
+      "short_name": "Projects",
+      "description": "Open project management",
+      "url": "/?page=project_mgmt"
+    }
+  ]
+}
